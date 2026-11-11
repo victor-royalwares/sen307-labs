@@ -1,0 +1,1 @@
+The first error I got was when I Inserted a wrong value to a table and wanted to delete those value, and the "safe_update" blocked it out . I used "SET SQL_SAFE_UPDATES = 0;" to switch off the "SAFE_UPDATES". I didn't come across error 1451
