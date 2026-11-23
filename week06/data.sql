@@ -196,3 +196,10 @@ VALUES ('20239999', 'Transfer Student',
 Science'));
 
 DELETE FROM Department WHERE dept_name = 'Library and Information Science';
+
+SELECT 'Departments' AS tbl, COUNT(*) AS total FROM Department
+UNION ALL SELECT 'Lecturers', COUNT(*) FROM Lecturer
+UNION ALL SELECT 'Students', COUNT(*) FROM Student
+UNION ALL SELECT 'Courses', COUNT(*) FROM Course
+UNION ALL SELECT 'Enrolments', COUNT(*) FROM Enrolment
+UNION ALL SELECT 'Allocations', COUNT(*) FROM CourseAllocation;
